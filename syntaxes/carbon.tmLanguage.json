@@ -1,0 +1,64 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Carbon",
+	"fileTypes": [ ".carbon", ".cb" ],
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#constants"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns":
+			[
+			{
+				"name": "storage.type.carbon",
+				"match": "\\b(sbyte|byte|short|ushort|int|uint|long|ulong|float|double|bool|string|object)\\b"
+			}
+			]
+		},
+		"strings": {
+			"double":
+			{
+				"name": "string.quoted.double.carbon",
+				"begin": "\"",
+				"end": "\"",
+				"patterns": [
+					{
+						"name": "constant.character.escape.carbon",
+						"match": "\\\\."
+					}
+				]
+			},
+			"single":
+			{
+				"name": "string.quoted.single.carbon",
+				"begin": "'",
+				"end": "'",
+				"patterns": [
+					{
+						"name": "constant.character.escape.carbon",
+						"match": "\\\\."
+					}
+				]
+			}
+		},
+		"constants":
+		{
+			"patterns":
+			[
+				{
+					"name": "constant.numeric.carbon",
+					"match": ""
+				}
+			]
+		}
+	},
+	"scopeName": "source.carbon"
+}

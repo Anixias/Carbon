@@ -1,0 +1,32 @@
+#version 0.1
+
+// General information
+name: "John Smith"
+dob: "01/02/1973"
+id: ulong => 56_789
+test: sbyte => 23
+contact_information:
+{
+	phone_information?:
+	{
+		string => number
+		string => type
+		bool => receive_calls
+	}
+	
+	phones: phone_information =>
+	[
+		/* Each phone has a 'number' and a 'type' */
+		{
+			number: "+1 555-555-1234"
+			type: "cell"
+			receive_calls: false
+		}
+		{
+			number: "+1 555-555-5678"
+			type: "home"
+			receive_calls: true
+		}
+	]
+	email: "johnsmith73@email.com"
+}
