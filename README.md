@@ -79,7 +79,7 @@ contact_information:
 		bool => receive_calls
 	}
 	
-	phones: phone_information =>
+	phones: phone_information[] =>
 	[
 		/* Each phone has a 'number' and a 'type' */
 		{
