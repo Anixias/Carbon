@@ -64,7 +64,7 @@ Numerical values may use `_` as a *digit separator*.
 Customer information template
 
 ```js
-version => 0.1
+#version 0.1
 
 // General information
 name: "John Smith"
