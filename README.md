@@ -4,7 +4,7 @@ A human-readable data serialization format.
 
 ## Summary
 
-The **Carbon** file format is designed for serializing data into human-readable text. **Carbon** is a [statically-typed format](https://en.wikipedia.org/wiki/Type_system#Static_typing) supporting multiple primitive data types. Files in the **Carbon** file format use a `*.cb` extension.
+The **Carbon** file format is designed for serializing data into human-readable text. **Carbon** is a [statically-typed format](https://en.wikipedia.org/wiki/Type_system#Static_typing) supporting multiple primitive data types. Files in the **Carbon** file format use a `*.cb` or `*.carbon` extension.
 
 ## Syntax
 
